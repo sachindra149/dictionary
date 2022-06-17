@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Search for the meaning of a word using an easy-to-use interface and a simple UI." />
+    <meta name="keywords" content="Dictionary, Search Words Meanings" />
+    <title>Dictionary Application - Know more about the application</title>
+    <link rel="icon" type="image/png" href="./images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/css.css" />
+
+	<meta name="og:type" property="og:type" content="website" />
+	<meta name="og:url" property="og:url" content="./images/dictionary-logo.jpg" />
+	<meta name="og:image" property="og:image" content="./images/dictionary-logo.jpg" />
+	<meta name="twitter:card" property="twitter:card" content="Summary" />
+	<meta name="twitter:url" property="twitter:url" content="./index.html" />
+	<meta name="twitter:image" property="twitter:image" content="./images/dictionary-logo.jpg" />
+	<meta name="twitter:title" property="twitter:title" content="VDictionary Application - Search your words via the Dictionary Application" />
+	<meta name="og:title" property="og:title" content="Dictionary Application - Search your words via the Dictionary Application" />
+	<meta name="twitter:description" property="twitter:description" content="One of the most user friendly way to search for the keywords and access the meaning as per your convenience by storing the data on your devices." />
+	<meta name="og:description" property="og:description" content="One of the most user friendly way to search for the keywords and access the meaning as per your convenience by storing the data on your devices." />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="justifiedBetween flexed">
+                <a href="./index.html"><img src="./images/dictionary-logo.jpg" height="50px" alt="Dictionary Logo" title="Dictionary" /></a>
+                <div class="relativePositioned search_block">
+                    <form action="#" name="SearchForm" onsubmit="return validateForm()" method="post">
+                        <input type="search" placeholder="Search for any word" value="" aria-label="Search for any word" name="searchText" />
+                        <input type="submit" class="submit_button" value="" aria-label="Click here to search" id="SearchTextSubmit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container" role="main">
+            <div class="content_block mb-20 p-0" id="word-meaning">                
+                <div class="bg">
+                    <p>This is a API based Dictionary Web Application.</p>
+                    <p>Courtesy: <a href="https://dictionaryapi.dev/" target="_blank" title="Dictionary API">Dictionary API</a></p>
+                </div>
+            </div>
+            <div class="content_block">
+                <h3>about the app</h3>
+                <p>This app is based on the Free Dictionary API. We are using the free API and we store all the searches in the browser's local storage. Hence, unless you clear the contents of the local storage manually, you would be able to see the searches in the list page.</p>
+            </div>
+        </div>
+    </section>
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="justifiedBetween flexed">
+                <img src="./images/footer-logo.jpg" width="auto" height="40px" alt="Dictionary" title="Dictionary" />
+                <ul class="footer">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./list.html">List</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/js.js"></script>
+</body>
+</html>
