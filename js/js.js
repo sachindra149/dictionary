@@ -243,13 +243,12 @@ if (document.getElementById("list-items")) {
     let localArray = Object.entries(localStorage);
     let ListItemsDOM = [];
     for (let i = 0; i < localArray.length; i++) {
-        console.log(localArray[i]);
         ListItemsDOM.push(
             "<div class='list-items' id='" +
                 localArray[i][0] +
                 "'>" +
                 localArray[i][1] +
-                "</div>"
+                "</div></div>"
         );
     }
     document.getElementById("list-items").innerHTML = ListItemsDOM.toString()
