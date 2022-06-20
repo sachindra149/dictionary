@@ -238,7 +238,8 @@ function validateForm() {
     document.forms["SearchForm"]["searchText"].value = "";
     return false;
 }
-if (document.getElementById("list-items")) {
+
+if (document.getElementById("list-items") && localStorage.length > 0) {
     let listItems = document.getElementById("list-items");
     let localArray = Object.entries(localStorage);
     let ListItemsDOM = [];
